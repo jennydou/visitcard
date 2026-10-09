@@ -8,7 +8,7 @@
     <!-- Google Fonts: Lora virsrakstiem, Inter pārējam tekstam -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
 
     <!-- Viss noformējums atsevišķā failā -->
     <link rel="stylesheet" href="style.css">
@@ -16,28 +16,44 @@
 <body>
 
     <header>
-        <p class="logo">Diāna<span>.vizītkarte</span></p>
-        <nav>
-            <ul>
-                <li><a href="#par-mani">Par mani</a></li>
-                <li><a href="#hobiji">Hobiji</a></li>
-                <li><a href="#prasmes">Prasmes</a></li>
-                <li><a href="#jaunumi">Jaunumi</a></li>
-                <li><a href="#kontakti">Kontakti</a></li>
-            </ul>
-        </nav>
+        <div class="josla-augsa">
+            <a class="logo" href="#">Diāna<span>.lv</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#par-mani">Par mani</a></li>
+                    <li><a href="#hobiji">Hobiji</a></li>
+                    <li><a href="#prasmes">Prasmes</a></li>
+                    <li><a href="#jaunumi">Jaunumi</a></li>
+                    <li><a href="#kontakti">Kontakti</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="varonis">
+            <img src="diana.svg" width="200" height="200"
+                 alt="Ilustrēts Diānas portrets: smaidoša meitene ar gariem tumšiem matiem un zilu džemperi">
+            <div>
+                <p class="sveiciens">Sveiki, es esmu</p>
+                <h1 id="vards">Diāna</h1>
+                <p class="amats">2. kursa studente · topošā programmēšanas tehniķe</p>
+                <ul class="birkas">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Figma</li>
+                    <li>Rīga</li>
+                </ul>
+                <a class="poga" href="#kontakti">Sazināties ar mani</a>
+            </div>
+        </div>
     </header>
 
     <main>
 
-        <section id="par-mani" class="ievads">
-            <img src="diana.svg" width="180" height="180"
-                 alt="Ilustrēts Diānas portrets: smaidoša meitene ar gariem tumšiem matiem un zilu džemperi">
-            <div>
-                <h1 id="vards">Diāna</h1>
+        <div class="divas-kolonnas">
+            <section id="par-mani">
                 <h2>Par mani</h2>
                 <p>
-                    Sveiki! Mani sauc Diāna, un es mācos <strong>2. kursā</strong> programmēšanas tehniķa specialitātē.
+                    Mani sauc Diāna, un es mācos <strong>2. kursā</strong> programmēšanas tehniķa specialitātē.
                     Man patīk, kā no dažām koda rindiņām pārlūkā rodas īsta lapa, ko var atvērt un parādīt draugiem.<br>
                     Šī vizītkarte ir mans <em>pirmais</em> lielākais darbs ar HTML un CSS.
                 </p>
@@ -47,31 +63,32 @@
                     kas ir ne tikai skaistas, bet arī ērtas visiem lietotājiem. Visvairāk idejām un piemēriem
                     izmantoju <a href="https://www.w3schools.com" target="_blank" rel="noopener">w3schools.com</a>.
                 </p>
-            </div>
-        </section>
+            </section>
 
-        <aside>
-            <h3>Īsumā par mani</h3>
-            <ul>
-                <li><b>Pilsēta:</b> Rīga</li>
-                <li><b>Mācības:</b> 2. kurss, programmēšanas tehniķis</li>
-                <li><b>Valodas:</b> latviešu, krievu, angļu</li>
-                <li><b>Mīļākais rīks:</b> VS Code</li>
-            </ul>
-            <p id="moto" class="citats">“Labs dizains ir tas, kuru nepamani — tas vienkārši strādā.”</p>
-        </aside>
+            <aside>
+                <h3>Īsumā par mani</h3>
+                <ul>
+                    <li><b>Pilsēta</b> Rīga</li>
+                    <li><b>Mācības</b> 2. kurss</li>
+                    <li><b>Specialitāte</b> programmēšanas tehniķis</li>
+                    <li><b>Valodas</b> LV · RU · EN</li>
+                    <li><b>Rīks</b> VS Code</li>
+                </ul>
+                <p id="moto" class="citats">“Labs dizains ir tas, kuru nepamani — tas vienkārši strādā.”</p>
+            </aside>
+        </div>
 
         <section id="hobiji">
             <h2>Hobiji un intereses</h2>
-            <ul>
-                <li>Mājaslapu dizains un zīmēšana Figmā</li>
-                <li>Fotografēšana ar telefonu — īpaši pilsēta vakaros</li>
-                <li>Grāmatas un seriāli par detektīviem</li>
-                <li>Joga un garas pastaigas pa Vecrīgu</li>
+            <ul class="hobiji">
+                <li><span class="ikona">🎨</span> Mājaslapu dizains un zīmēšana Figmā</li>
+                <li><span class="ikona">📷</span> Fotografēšana — īpaši vakara pilsēta</li>
+                <li><span class="ikona">📚</span> Grāmatas un seriāli par detektīviem</li>
+                <li><span class="ikona">🧘</span> Joga un garas pastaigas pa Vecrīgu</li>
             </ul>
 
             <h3>Mani mērķi šim mācību gadam</h3>
-            <ol>
+            <ol class="merki">
                 <li>Uztaisīt savu portfolio vietni</li>
                 <li>Apgūt JavaScript pamatus</li>
                 <li>Nokārtot praksi kādā IT uzņēmumā</li>
@@ -84,72 +101,94 @@
                 <tr>
                     <th>Prasme</th>
                     <th>Līmenis</th>
+                    <th class="slept-mobili">Progress</th>
                 </tr>
                 <tr>
                     <td>HTML</td>
                     <td class="izcelts">Labi</td>
+                    <td class="slept-mobili"><div class="josla"><span class="j80"></span></div></td>
                 </tr>
                 <tr>
                     <td>CSS</td>
                     <td>Vidēji</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Iesācēja</td>
+                    <td class="slept-mobili"><div class="josla"><span class="j60"></span></div></td>
                 </tr>
                 <tr>
                     <td>Figma</td>
                     <td>Vidēji</td>
+                    <td class="slept-mobili"><div class="josla"><span class="j60"></span></div></td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Iesācēja</td>
+                    <td class="slept-mobili"><div class="josla"><span class="j30"></span></div></td>
                 </tr>
                 <tr>
                     <td>Angļu valoda</td>
                     <td>B2</td>
+                    <td class="slept-mobili"><div class="josla"><span class="j70"></span></div></td>
                 </tr>
             </table>
         </section>
 
         <section id="jaunumi">
             <h2>Jaunumi</h2>
-            <article class="kartite">
-                <h3>Mana pirmā mājaslapa</h3>
-                <p>
-                    Šonedēļ es pirmo reizi pievienoju savai lapai atsevišķu CSS failu. Sapratu, ka katrs
-                    elements ir kaste — saturs, padding, border un margin.
-                </p>
-            </article>
-
-            <p class="atstarpe-a">Šai rindkopai ir margin-bottom: 20px.</p>
-            <p class="atstarpe-b">Šai rindkopai ir margin-top: 30px — starp tām paliek 30px, nevis 50px.</p>
+            <div class="jaunumi-saturs">
+                <article class="kartite">
+                    <p class="datums">Oktobris, 2026</p>
+                    <h3>Mana pirmā mājaslapa</h3>
+                    <p>
+                        Šonedēļ pirmo reizi pievienoju savai lapai atsevišķu CSS failu. Sapratu,
+                        ka katrs elements ir kaste — saturs, padding, border un margin.
+                    </p>
+                </article>
+                <div>
+                    <p class="atstarpe-a">
+                        Nākamais solis — iemācīties Flexbox un Grid, lai lapa izskatītos labi gan datorā,
+                        gan telefonā.
+                    </p>
+                    <p class="atstarpe-b">
+                        Pēc tam ķeršos pie JavaScript, lai kontaktforma tiešām sūtītu ziņas.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="kontakti">
             <h2>Kontakti</h2>
-            <p>Ja gribi sadarboties vai vienkārši pajautāt kaut ko — raksti!</p>
-            <form>
-                <label for="vardsLauks">Vārds</label>
-                <input type="text" id="vardsLauks" name="vards" placeholder="Tavs vārds">
+            <div class="kontakti-saturs">
+                <form>
+                    <label for="vardsLauks">Vārds</label>
+                    <input type="text" id="vardsLauks" name="vards" placeholder="Tavs vārds">
 
-                <label for="epasts">E-pasts</label>
-                <input type="email" id="epasts" name="epasts" placeholder="vards@piemers.lv">
+                    <label for="epasts">E-pasts</label>
+                    <input type="email" id="epasts" name="epasts" placeholder="vards@piemers.lv">
 
-                <label for="sazina">Kā ar tevi sazināties?</label>
-                <select id="sazina" name="sazina">
-                    <option>Pa e-pastu</option>
-                    <option>Pa tālruni</option>
-                    <option>Instagram</option>
-                </select>
+                    <label for="sazina">Kā ar tevi sazināties?</label>
+                    <select id="sazina" name="sazina">
+                        <option>Pa e-pastu</option>
+                        <option>Pa tālruni</option>
+                        <option>Instagram</option>
+                    </select>
 
-                <label for="zinja">Ziņa</label>
-                <textarea id="zinja" name="zinja" rows="5" placeholder="Tava ziņa..."></textarea>
+                    <label for="zinja">Ziņa</label>
+                    <textarea id="zinja" name="zinja" rows="5" placeholder="Tava ziņa..."></textarea>
 
-                <button type="submit">Nosūtīt</button>
-            </form>
+                    <button type="submit">Nosūtīt ziņu</button>
+                </form>
+                <div class="kontakti-info">
+                    <p>Ja gribi sadarboties, ir ideja projektam vai vienkārši gribi kaut ko pajautāt — raksti!
+                        Parasti atbildu <span class="izcelts">vienas dienas</span> laikā.</p>
+                    <p><b>E-pasts:</b> diana@piemers.lv<br>
+                       <b>Pilsēta:</b> Rīga, Latvija</p>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 Diāna · e-pasts: diana@piemers.lv</p>
+        <p>© 2026 Diāna · Izveidots ar HTML un CSS · diana@piemers.lv</p>
     </footer>
 
 </body>
