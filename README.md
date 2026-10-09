@@ -1,6 +1,6 @@
 # Diānas digitālā vizītkarte
 
-Atver `manavizitkarte.html` pārlūkā. Faili: `manavizitkarte.html`, `style.css`, `diana.svg`.
+Atver `index.html` pārlūkā. Faili: `index.html`, `style.css`, `diana.svg`.
 
 ## Kur izpildīta katra prasība
 
