@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Diānas portrets</title>
+  <circle cx="100" cy="100" r="100" fill="#e3ecf8"/>
+  <!-- mati aizmugurē -->
+  <path d="M48 95 C44 50 70 30 100 30 C132 30 158 50 152 100 L156 168 L44 168 Z" fill="#3b2a24"/>
+  <!-- kakls -->
+  <rect x="88" y="120" width="24" height="26" rx="8" fill="#e8b996"/>
+  <!-- džemperis -->
+  <path d="M38 200 C40 160 66 140 100 140 C134 140 160 160 162 200 Z" fill="#1a5fb4"/>
+  <path d="M84 141 Q100 156 116 141" fill="none" stroke="#f7f4ee" stroke-width="5" stroke-linecap="round"/>
+  <!-- seja -->
+  <ellipse cx="100" cy="92" rx="34" ry="40" fill="#f2c7a5"/>
+  <!-- bārkstis -->
+  <path d="M64 86 C66 56 86 46 104 48 C126 50 140 66 136 88 C124 70 104 62 82 70 C74 74 68 80 64 86 Z" fill="#3b2a24"/>
+  <!-- acis -->
+  <ellipse cx="87" cy="96" rx="3.6" ry="4.4" fill="#2b2b2b"/>
+  <ellipse cx="113" cy="96" rx="3.6" ry="4.4" fill="#2b2b2b"/>
+  <!-- vaigi -->
+  <circle cx="80" cy="110" r="6" fill="#ec9c8c" opacity="0.45"/>
+  <circle cx="120" cy="110" r="6" fill="#ec9c8c" opacity="0.45"/>
+  <!-- smaids -->
+  <path d="M90 114 Q100 123 110 114" fill="none" stroke="#a5513f" stroke-width="3" stroke-linecap="round"/>
+</svg>
